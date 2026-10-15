@@ -1,0 +1,138 @@
+{
+  "canonical_commit": "708cc75dfde3a44bda51b8c5a4b60cdbe5f79b07",
+  "build_utc": "2026-10-15T04:26:22Z",
+  "files": {
+    ".github/workflows/pages.yml": {
+      "sha256": "ac6648d97e07ded62d1d1c7abd2a6fa218211adef9890f7502dd9ac95dbfbfa0",
+      "bytes": 1389
+    },
+    "LICENSE": {
+      "sha256": "faea035c83b65e9848f83fd1785c427ac48b625f401cf91def56550eea37af19",
+      "bytes": 42933
+    },
+    "README.md": {
+      "sha256": "e0d54970fce7015d67ba569ce6dd80d2912d6b7a2bba5054b07491ebe83369ea",
+      "bytes": 1588
+    },
+    "docs/.nojekyll": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "docs/ebs-assessment-workflow.html": {
+      "sha256": "18fb54f7742b0dc32ff196b4f83ca34167c84c66048a7fa6c745826a2359a29e",
+      "bytes": 35239
+    },
+    "docs/incremental-models-2026.html": {
+      "sha256": "ed6a60d4e95d66d843f8d67cf1f72a0a2335c8da0bd2edec7e5bff745814487f",
+      "bytes": 32677
+    },
+    "docs/index.html": {
+      "sha256": "c7e8625324fe9bf12e634f0963242751cc9fc85a58d887bfa0e060e2adb015c4",
+      "bytes": 25462
+    },
+    "docs/provenance.json": {
+      "sha256": "7239caa75212a0772aa244ae168208d605d40abd18569a69609b521f14ff342f",
+      "bytes": 4176
+    },
+    "docs/robots.txt": {
+      "sha256": "83b840b2a56bfaed02ee1e58b2e3de0c00218fa402ccd799b2fd181ba69da347",
+      "bytes": 74
+    },
+    "docs/search.json": {
+      "sha256": "eed37dcbc14617929f259de821268fc1e3aa7eb1824116cc4f7c71cf13957360",
+      "bytes": 23080
+    },
+    "docs/site_libs/bootstrap/bootstrap-2c353fb1ee9795f3e46801e7bd733d82.min.css": {
+      "sha256": "fa6cc6a10b2d1c323b6b7bc7ccd0e7539253c6167d0714e42800d951e052791f",
+      "bytes": 499413
+    },
+    "docs/site_libs/bootstrap/bootstrap-icons.css": {
+      "sha256": "01253947f506e030589e4f33fc7ec7ccdfb9505e2e596dedf16445f12e243c0a",
+      "bytes": 99464
+    },
+    "docs/site_libs/bootstrap/bootstrap-icons.woff": {
+      "sha256": "f55513b7b591cb84a3b87ff0e34ea24d4831d6fedc22e54b911ca64b5b544a15",
+      "bytes": 180288
+    },
+    "docs/site_libs/bootstrap/bootstrap.min.js": {
+      "sha256": "d2ea6c1e0cabca20d18e924b25a1cd0187c38ba7c33f60ab06e1b0402b9bcdb5",
+      "bytes": 80668
+    },
+    "docs/site_libs/clipboard/clipboard.min.js": {
+      "sha256": "e17a1d816e13c0826e0ed7febfabc3277f45571234bde0bf9120829a7169edc9",
+      "bytes": 9160
+    },
+    "docs/site_libs/quarto-html/anchor.min.js": {
+      "sha256": "69098e105d990f834cff1b7886d873444228ff63c590e5ff834d568f1115ed8b",
+      "bytes": 5888
+    },
+    "docs/site_libs/quarto-html/popper.min.js": {
+      "sha256": "4d50586b184724d39ddfe0f6582861664eddd5e806e5a79e0dbaa832361414d0",
+      "bytes": 20084
+    },
+    "docs/site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css": {
+      "sha256": "4973a76eb0de3b99bc67687ab2ecea249e552bae328dd8a952dad89732e9ec18",
+      "bytes": 3678
+    },
+    "docs/site_libs/quarto-html/quarto.js": {
+      "sha256": "4ecb60f215d96b2af0fe9d985c71e32863b1c993a64725a416ac18b5991c59c6",
+      "bytes": 26830
+    },
+    "docs/site_libs/quarto-html/tabsets/tabsets.js": {
+      "sha256": "a9c226bf70e82eaf5476f619cecfb70b4446b87ce4d1634d6404b0b2ba006d15",
+      "bytes": 2882
+    },
+    "docs/site_libs/quarto-html/tippy.css": {
+      "sha256": "5969f497d9158d7682f8219c6f13fa67269cdf5bf50a3931d95327151dee5678",
+      "bytes": 1409
+    },
+    "docs/site_libs/quarto-html/tippy.umd.min.js": {
+      "sha256": "41181eeec6d7ba64cb9165f0e95563e34e026bde79e7c13aeec83270429b6fae",
+      "bytes": 24033
+    },
+    "docs/site_libs/quarto-nav/headroom.min.js": {
+      "sha256": "5b80cc4165a661a3f2060d6bdb5ccff591f04c4f8e39a06c12d3c2544587cb17",
+      "bytes": 4570
+    },
+    "docs/site_libs/quarto-nav/quarto-nav.js": {
+      "sha256": "a209dafb198d7c8e77cb398912b7225806e7b998211afa1fb269a4ef54ff56f6",
+      "bytes": 9851
+    },
+    "docs/site_libs/quarto-search/autocomplete.umd.js": {
+      "sha256": "cd9db3b7d812139a4679a2566ea8f01b2a80159490a60b9e9e813e81b5e00a05",
+      "bytes": 96397
+    },
+    "docs/site_libs/quarto-search/fuse.min.js": {
+      "sha256": "c57339c3fa16b1d69d9a6b46749a8139ef8d4fc9bbfe48144ff897aa7d4222ec",
+      "bytes": 23539
+    },
+    "docs/site_libs/quarto-search/quarto-search.js": {
+      "sha256": "1a23221f499b3993dc66ca5c8913e4e6602dfa4652337e9fbf75139ded5ece68",
+      "bytes": 43121
+    },
+    "docs/sitemap.xml": {
+      "sha256": "684ca579d28172f58a644fc22ef5cbbc70faf37d2ee3e8bc7a9a738e7daeba7a",
+      "bytes": 734
+    },
+    "docs/styles.css": {
+      "sha256": "c5d2324e6d99558ccdf13fa50fd5f28a07e2ca0867a326c794f96f35fd9f1b65",
+      "bytes": 317
+    },
+    "docs/where-things-live.html": {
+      "sha256": "e2a5c02319a20d0bbc5e6c21f56fc24f9df76b6468105ad7ae440f72ff1867d6",
+      "bytes": 31039
+    },
+    "release.json": {
+      "sha256": "7239caa75212a0772aa244ae168208d605d40abd18569a69609b521f14ff342f",
+      "bytes": 4176
+    },
+    "requirements.txt": {
+      "sha256": "0e06a2cd5104817742c13c9599d8c4637f92124e1e4bd8b2bbef66293f9a6c18",
+      "bytes": 11
+    },
+    "tools/public_release.py": {
+      "sha256": "5712bcfc3f1b512c1b82e1cc886dccf8257b28d0607aa274c2a4e7ca70dfa22b",
+      "bytes": 9577
+    }
+  }
+}

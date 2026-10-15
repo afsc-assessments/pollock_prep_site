@@ -1,0 +1,7 @@
+:root { --bs-link-color: #135f7a; }
+body { color: #18323c; }
+h1, h2, h3 { color: #183f4c; }
+.sidebar-title { font-weight: 700; }
+.release-record { border-left: 3px solid #b17a25; padding-left: 1rem; font-size: .9rem; }
+a:focus-visible { outline: 3px solid #b17a25; outline-offset: 3px; }
+table { font-size: .94rem; }

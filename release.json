@@ -1,0 +1,98 @@
+{
+  "canonical_repository": "https://github.com/noaa-afsc/pollock_prep",
+  "canonical_commit": "708cc75dfde3a44bda51b8c5a4b60cdbe5f79b07",
+  "build_utc": "2026-10-15T04:26:22Z",
+  "release_ready": true,
+  "public_repository": "afsc-assessments/pollock_prep_site",
+  "site_url": "https://afsc-assessments.github.io/pollock_prep_site/",
+  "quarto": "1.10.18",
+  "pages": [
+    "index.html",
+    "ebs-assessment-workflow.html",
+    "incremental-models-2026.html",
+    "where-things-live.html"
+  ],
+  "scope": "Methodological text only. No scientific input datasets, fit outputs, private survey deliveries or original report downloads.",
+  "input_data_dates": "Not applicable: no observational data files are included or read. Planned model endpoints are documented separately.",
+  "selection_source_dates": {
+    "annual_workflow_inspection": "2026-10-09",
+    "incremental_model_instructions": "2026-10-14"
+  },
+  "selections": {
+    "disclaimer": {
+      "source": "README.md",
+      "heading": "# Disclaimer",
+      "sha256": "1b51ca0d44250da6058985c080667990353b44f18ce8692cc994a559e1e6b9a0"
+    },
+    "workflow_steps": {
+      "source": "wiki/reports/ebs-workflow/workflow-body.md",
+      "heading": "## Steps to do the assessment",
+      "sha256": "f8c5ee0b294d4f65fbafc401846e434014da53cbccbc0e45ad42e69fdce927bc"
+    },
+    "fit_diagnostics": {
+      "source": "wiki/reports/ebs-workflow/workflow-body.md",
+      "heading": "### Fit and preserve the diagnostics",
+      "sha256": "c18f35486d910408d3f3dff54a08a12327fdf3fa472d6aa95fbb589c63159a07"
+    },
+    "retrospectives": {
+      "source": "wiki/reports/ebs-workflow/workflow-body.md",
+      "heading": "### Retrospectives and sensitivities",
+      "sha256": "d9be6b3a255facc5927a75cc9074d626a8e7065fdee98a74c2428a884e733a1e",
+      "paragraphs": [
+        0
+      ]
+    },
+    "harvest_table": {
+      "source": "wiki/reports/ebs-workflow/workflow-body.md",
+      "heading": "### Harvest recommendation table",
+      "sha256": "21fa8288a613bd084c7484307a51bcc2af51b10b04cd9575bedda5f3369b3c08"
+    },
+    "report_archive": {
+      "source": "wiki/reports/ebs-workflow/workflow-body.md",
+      "heading": "## SAFE chapter ecosystem material and annual archive",
+      "sha256": "02a2c1f367cdcb916b61d5ef42fceaaa67192102107b6059e9cde47ec982d444",
+      "paragraphs": [
+        0,
+        3,
+        4
+      ]
+    },
+    "model_lead": {
+      "source": "wiki/incremental-models-2026.qmd",
+      "heading": "lead",
+      "sha256": "01257ba6223c120f66a331751af61516f739abe689a4253d92628d9ee8346734"
+    },
+    "model_sequence": {
+      "source": "wiki/incremental-models-2026.qmd",
+      "heading": "## Cumulative run sequence",
+      "sha256": "3061d51e6f25863dd277f34498d0ab0b226e446130b5ae3bf3d1fbd0a8d82ad9"
+    },
+    "model_endpoints": {
+      "source": "wiki/incremental-models-2026.qmd",
+      "heading": "## Keep the endpoints distinct",
+      "sha256": "e6f6337a9a860b65ec0b902f6d2b32a12430bc21ba9f100190d683cd24069cff",
+      "paragraphs": [
+        0
+      ]
+    },
+    "model_comparisons": {
+      "source": "wiki/incremental-models-2026.qmd",
+      "heading": "## Compare and retain the evidence",
+      "sha256": "b674482bb6f8df77dbb99fe9c6a109e13fc9f9b1289164a56d289f69bc10ce0f"
+    },
+    "model_decision": {
+      "source": "wiki/incremental-models-2026.qmd",
+      "heading": "## Source and open decision",
+      "sha256": "b76bb7351615b831428587fd0128ca17a291ee83a8148eabc68f16d99df35694"
+    }
+  },
+  "build_sources": {
+    "public/allowlist.json": "df81a2775cb4d37bb330dd1f08d11de5fb30ca4f595d15e24e0524faec5f7f80",
+    "public/styles.css": "c5d2324e6d99558ccdf13fa50fd5f28a07e2ca0867a326c794f96f35fd9f1b65",
+    "public/pages-workflow.yml.in": "ac6648d97e07ded62d1d1c7abd2a6fa218211adef9890f7502dd9ac95dbfbfa0",
+    "scripts/build_public_wiki.py": "a150f26b68775ac307f7d5ebf9f4938680a1a29b353fca27ff2df8b894601f80",
+    "scripts/public_release.py": "5712bcfc3f1b512c1b82e1cc886dccf8257b28d0607aa274c2a4e7ca70dfa22b",
+    "requirements.txt": "0e06a2cd5104817742c13c9599d8c4637f92124e1e4bd8b2bbef66293f9a6c18",
+    "LICENSE": "faea035c83b65e9848f83fd1785c427ac48b625f401cf91def56550eea37af19"
+  }
+}

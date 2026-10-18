@@ -3,8 +3,8 @@
 This repository is a generated publication. **Edit in the canonical [pollock_prep source (restricted)](https://github.com/noaa-afsc/pollock_prep); do not hand-edit these generated pages.**
 
 - Public reading copy: https://afsc-assessments.github.io/pollock_prep_site/
-- Canonical commit: `708cc75dfde3a44bda51b8c5a4b60cdbe5f79b07`
-- Build time (UTC): 2026-10-15T04:26:22Z
+- Canonical commit: `b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964`
+- Build time (UTC): 2026-10-18T21:13:34Z
 - Scope: methodological workflow and incremental-model plan only.
 - Where things live and reproducible update flow: https://afsc-assessments.github.io/pollock_prep_site/where-things-live.html
 

@@ -1,6 +1,6 @@
 {
-  "canonical_commit": "708cc75dfde3a44bda51b8c5a4b60cdbe5f79b07",
-  "build_utc": "2026-10-15T04:26:22Z",
+  "canonical_commit": "b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964",
+  "build_utc": "2026-10-18T21:13:34Z",
   "files": {
     ".github/workflows/pages.yml": {
       "sha256": "ac6648d97e07ded62d1d1c7abd2a6fa218211adef9890f7502dd9ac95dbfbfa0",
@@ -11,7 +11,7 @@
       "bytes": 42933
     },
     "README.md": {
-      "sha256": "e0d54970fce7015d67ba569ce6dd80d2912d6b7a2bba5054b07491ebe83369ea",
+      "sha256": "d8f7d0e4a53ec032a7c135fca1515726da71ddf2176aba3a63e0c8932b6999ca",
       "bytes": 1588
     },
     "docs/.nojekyll": {
@@ -19,28 +19,28 @@
       "bytes": 0
     },
     "docs/ebs-assessment-workflow.html": {
-      "sha256": "18fb54f7742b0dc32ff196b4f83ca34167c84c66048a7fa6c745826a2359a29e",
+      "sha256": "0eb654c51ced22ba9cb2db8f28be962329f81a55225fd78ce7852cf2dc089981",
       "bytes": 35239
     },
     "docs/incremental-models-2026.html": {
-      "sha256": "ed6a60d4e95d66d843f8d67cf1f72a0a2335c8da0bd2edec7e5bff745814487f",
-      "bytes": 32677
+      "sha256": "051f2b35da36a772f9ffccdf0c38bb7f6ab07653ff20e5dcbf54c880aeb4e261",
+      "bytes": 33548
     },
     "docs/index.html": {
-      "sha256": "c7e8625324fe9bf12e634f0963242751cc9fc85a58d887bfa0e060e2adb015c4",
+      "sha256": "36e72d00cc9594a989657a3584aee259de4737a774559d3be4eea08ec19020be",
       "bytes": 25462
     },
     "docs/provenance.json": {
-      "sha256": "7239caa75212a0772aa244ae168208d605d40abd18569a69609b521f14ff342f",
-      "bytes": 4176
+      "sha256": "c076827840a1113a3ff00c2d81e68d4c3cc03b3c155b317152e9b5910595983d",
+      "bytes": 4226
     },
     "docs/robots.txt": {
       "sha256": "83b840b2a56bfaed02ee1e58b2e3de0c00218fa402ccd799b2fd181ba69da347",
       "bytes": 74
     },
     "docs/search.json": {
-      "sha256": "eed37dcbc14617929f259de821268fc1e3aa7eb1824116cc4f7c71cf13957360",
-      "bytes": 23080
+      "sha256": "e43ea820a7d57d85d939c6d98358b1cd293cc6a06a813b75fbfef5ae68bd124c",
+      "bytes": 23651
     },
     "docs/site_libs/bootstrap/bootstrap-2c353fb1ee9795f3e46801e7bd733d82.min.css": {
       "sha256": "fa6cc6a10b2d1c323b6b7bc7ccd0e7539253c6167d0714e42800d951e052791f",
@@ -111,7 +111,7 @@
       "bytes": 43121
     },
     "docs/sitemap.xml": {
-      "sha256": "684ca579d28172f58a644fc22ef5cbbc70faf37d2ee3e8bc7a9a738e7daeba7a",
+      "sha256": "57ad9b3ad7ee1a9c8689bbd1e5faf32b2b8c9e9f2666e677f8d0a226ede01c75",
       "bytes": 734
     },
     "docs/styles.css": {
@@ -119,12 +119,12 @@
       "bytes": 317
     },
     "docs/where-things-live.html": {
-      "sha256": "e2a5c02319a20d0bbc5e6c21f56fc24f9df76b6468105ad7ae440f72ff1867d6",
+      "sha256": "fee39a25666d8a3d5212bdcd70251b485822668a4a6d8c44fbac6fc957787aec",
       "bytes": 31039
     },
     "release.json": {
-      "sha256": "7239caa75212a0772aa244ae168208d605d40abd18569a69609b521f14ff342f",
-      "bytes": 4176
+      "sha256": "c076827840a1113a3ff00c2d81e68d4c3cc03b3c155b317152e9b5910595983d",
+      "bytes": 4226
     },
     "requirements.txt": {
       "sha256": "0e06a2cd5104817742c13c9599d8c4637f92124e1e4bd8b2bbef66293f9a6c18",

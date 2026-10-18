@@ -1,7 +1,7 @@
 {
   "canonical_repository": "https://github.com/noaa-afsc/pollock_prep",
-  "canonical_commit": "708cc75dfde3a44bda51b8c5a4b60cdbe5f79b07",
-  "build_utc": "2026-10-15T04:26:22Z",
+  "canonical_commit": "b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964",
+  "build_utc": "2026-10-18T21:13:34Z",
   "release_ready": true,
   "public_repository": "afsc-assessments/pollock_prep_site",
   "site_url": "https://afsc-assessments.github.io/pollock_prep_site/",
@@ -16,7 +16,8 @@
   "input_data_dates": "Not applicable: no observational data files are included or read. Planned model endpoints are documented separately.",
   "selection_source_dates": {
     "annual_workflow_inspection": "2026-10-09",
-    "incremental_model_instructions": "2026-10-14"
+    "incremental_model_instructions": "2026-10-14",
+    "avo_calibration_instructions": "2026-10-18"
   },
   "selections": {
     "disclaimer": {
@@ -60,12 +61,12 @@
     "model_lead": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "lead",
-      "sha256": "01257ba6223c120f66a331751af61516f739abe689a4253d92628d9ee8346734"
+      "sha256": "1ca2f789144677cc6ef265c775cf899a3437d34f73923eedc951745b73855cb1"
     },
     "model_sequence": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "## Cumulative run sequence",
-      "sha256": "3061d51e6f25863dd277f34498d0ab0b226e446130b5ae3bf3d1fbd0a8d82ad9"
+      "sha256": "1e7332fce05aa564a47eb01a97824ba9da5d464067816f65ba55392cb4ce1737"
     },
     "model_endpoints": {
       "source": "wiki/incremental-models-2026.qmd",
@@ -83,11 +84,11 @@
     "model_decision": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "## Source and open decision",
-      "sha256": "b76bb7351615b831428587fd0128ca17a291ee83a8148eabc68f16d99df35694"
+      "sha256": "7202bbcd27b418f6541657423e7e8bb40f10869cdcbfeb4f4ea903f00e3271fa"
     }
   },
   "build_sources": {
-    "public/allowlist.json": "df81a2775cb4d37bb330dd1f08d11de5fb30ca4f595d15e24e0524faec5f7f80",
+    "public/allowlist.json": "5426d9cc93bc43eaabc257222663133eabf2f18031a9d7511e0137a621821d7a",
     "public/styles.css": "c5d2324e6d99558ccdf13fa50fd5f28a07e2ca0867a326c794f96f35fd9f1b65",
     "public/pages-workflow.yml.in": "ac6648d97e07ded62d1d1c7abd2a6fa218211adef9890f7502dd9ac95dbfbfa0",
     "scripts/build_public_wiki.py": "a150f26b68775ac307f7d5ebf9f4938680a1a29b353fca27ff2df8b894601f80",

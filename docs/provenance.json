@@ -1,7 +1,7 @@
 {
   "canonical_repository": "https://github.com/noaa-afsc/pollock_prep",
-  "canonical_commit": "b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964",
-  "build_utc": "2026-10-18T21:13:34Z",
+  "canonical_commit": "fabdfd3b4a688be161ec413861140f2664fd0e94",
+  "build_utc": "2026-10-25T23:07:06Z",
   "release_ready": true,
   "public_repository": "afsc-assessments/pollock_prep_site",
   "site_url": "https://afsc-assessments.github.io/pollock_prep_site/",
@@ -12,12 +12,13 @@
     "incremental-models-2026.html",
     "where-things-live.html"
   ],
-  "scope": "Methodological text only. No scientific input datasets, fit outputs, private survey deliveries or original report downloads.",
-  "input_data_dates": "Not applicable: no observational data files are included or read. Planned model endpoints are documented separately.",
+  "scope": "Workflow methods and scoped aggregate execution account. No raw scientific inputs, fitted objects, private survey deliveries, unrelated diagnostics or SAFE downloads.",
+  "input_data_dates": "No observational data files are included or read by the website build; execution facts are reviewed text from saved run records.",
   "selection_source_dates": {
     "annual_workflow_inspection": "2026-10-09",
     "incremental_model_instructions": "2026-10-14",
-    "avo_calibration_instructions": "2026-10-18"
+    "avo_calibration_instructions": "2026-10-18",
+    "incremental_execution_review": "2026-10-25"
   },
   "selections": {
     "disclaimer": {
@@ -61,37 +62,34 @@
     "model_lead": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "lead",
-      "sha256": "1ca2f789144677cc6ef265c775cf899a3437d34f73923eedc951745b73855cb1"
+      "sha256": "3f9132791e81204775a938dbd1bf0c3b029ca7141d5607b26b8a9419625ca9d2"
     },
     "model_sequence": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "## Cumulative run sequence",
-      "sha256": "1e7332fce05aa564a47eb01a97824ba9da5d464067816f65ba55392cb4ce1737"
+      "sha256": "7bb6dd6cdd1ae3e88578fae493e5e5145a8549dcc2dae135eb81e9d1307809b0"
     },
     "model_endpoints": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "## Keep the endpoints distinct",
-      "sha256": "e6f6337a9a860b65ec0b902f6d2b32a12430bc21ba9f100190d683cd24069cff",
-      "paragraphs": [
-        0
-      ]
+      "sha256": "48da3e9ce0029e47a4348e17d3cd7a96e2d503ab6dc27a15f6728f5dd24fa455"
     },
     "model_comparisons": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "## Compare and retain the evidence",
-      "sha256": "b674482bb6f8df77dbb99fe9c6a109e13fc9f9b1289164a56d289f69bc10ce0f"
+      "sha256": "297534d19dd666015ef7b837dc6dc64c3861d25ea79349074e11c9a960624dcf"
     },
     "model_decision": {
       "source": "wiki/incremental-models-2026.qmd",
       "heading": "## Source and open decision",
-      "sha256": "7202bbcd27b418f6541657423e7e8bb40f10869cdcbfeb4f4ea903f00e3271fa"
+      "sha256": "c8b828edc86a167762fc8e8a34b21c9af764878798835089bcf2acc11069f430"
     }
   },
   "build_sources": {
-    "public/allowlist.json": "5426d9cc93bc43eaabc257222663133eabf2f18031a9d7511e0137a621821d7a",
+    "public/allowlist.json": "4a17debdbbf079fba1947701f80b2762c03470901b7f4cf5f86bffca6cb7e915",
     "public/styles.css": "c5d2324e6d99558ccdf13fa50fd5f28a07e2ca0867a326c794f96f35fd9f1b65",
     "public/pages-workflow.yml.in": "ac6648d97e07ded62d1d1c7abd2a6fa218211adef9890f7502dd9ac95dbfbfa0",
-    "scripts/build_public_wiki.py": "a150f26b68775ac307f7d5ebf9f4938680a1a29b353fca27ff2df8b894601f80",
+    "scripts/build_public_wiki.py": "5edb727fab5a3b1123ca6cab0a6016487f9cea2e810739b54538e727914ae139",
     "scripts/public_release.py": "5712bcfc3f1b512c1b82e1cc886dccf8257b28d0607aa274c2a4e7ca70dfa22b",
     "requirements.txt": "0e06a2cd5104817742c13c9599d8c4637f92124e1e4bd8b2bbef66293f9a6c18",
     "LICENSE": "faea035c83b65e9848f83fd1785c427ac48b625f401cf91def56550eea37af19"

@@ -230,13 +230,13 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-this-edition-contains" class="level2">
 <h2 class="anchored" data-anchor-id="what-this-edition-contains">What this edition contains</h2>
 <p>The annual workflow is selected directly from the existing canonical guide. The incremental-model plan is selected directly from its existing canonical page. There are no independently edited public Quarto copies or downloadable scientific datasets. The internal working website remains available under its existing access controls.</p>
-<p>No observational data files are used to build this edition. Years in the model plan are intended input endpoints, not certification of delivery, acceptance or completed model runs. The workflow source was inspected on 9 October 2026; the incremental sequence records instructions supplied on 14 October 2026. These content dates are separate from the build time below.</p>
+<p>No observational data files are used to build this edition. The incremental page records the completed cumulative sequence and reviewed aggregate execution results, checked on 25 October 2026. A model endpoint does not imply identical observation endpoints or scientific acceptance. Source-content review dates in the machine record remain separate from build time.</p>
 </section>
 <section id="reproduce-and-update-this-publication" class="level2">
 <h2 class="anchored" data-anchor-id="reproduce-and-update-this-publication">Reproduce and update this publication</h2>
 <ol type="1">
 <li>Edit methodological text in its canonical source. For the imported annual guide, edit in the owning project and refresh its canonical saved guide; keep that source relationship recorded.</li>
-<li>Review changes to the selected sections and update their exact hashes in <code>public/allowlist.json</code> only after confirming that the public text remains within the approved methodological scope. Unselected text and files are not copied.</li>
+<li>Review changes to the selected sections and update their exact hashes in <code>public/allowlist.json</code> only after confirming that the public text remains within the approved methodological and scoped execution-documentation boundary. Unselected text and files are not copied.</li>
 <li>Run <code>python3 -m unittest discover -s tests -p "test_public_wiki.py"</code>. Preview with <code>python3 scripts/build_public_wiki.py --preview --output-dir /tmp/pollock-public-preview-NEW</code>. Preview output cannot pass a release validation.</li>
 <li>Commit the reviewed source and build changes. From a clean canonical checkout, run <code>python3 scripts/build_public_wiki.py --output-dir /tmp/pollock-public-release-NEW</code>, then <code>python3 scripts/public_release.py /tmp/pollock-public-release-NEW</code>.</li>
 <li>Use existing authorized account access to publish the exact generated file set to the public output repository. Do not copy the private repository history or the complete internal website. Check the previous output inventory before replacing files; stop on unrelated files or unexpected differences.</li>
@@ -250,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <p>The <a href="provenance.json">machine-readable source/build record</a> gives the full canonical commit, UTC build time, source-selection hashes, tool version and scope. The <a href="https://github.com/afsc-assessments/pollock_prep_site">public output repository</a> contains the exact release inventory, file hashes, validator and deployment workflow. The canonical record and inventory describe publication provenance; they are not scientific acceptance or institutional clearance for other material.</p>
 <p>Full screen-reader testing and formal Section 508 conformance are not established by automated HTML checks.</p>
 <div class="release-record">
-<p>Source commit: <code>b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964</code>. Built <strong>2026-10-18T21:13:34Z</strong> with Quarto 1.10.18. <a href="https://github.com/noaa-afsc/pollock_prep/tree/b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964">Canonical source (restricted)</a> · <a href="./where-things-live.html">Locations and update flow</a>.</p>
+<p>Source commit: <code>fabdfd3b4a688be161ec413861140f2664fd0e94</code>. Built <strong>2026-10-25T23:07:06Z</strong> with Quarto 1.10.18. <a href="https://github.com/noaa-afsc/pollock_prep/tree/fabdfd3b4a688be161ec413861140f2664fd0e94">Canonical source (restricted)</a> · <a href="./where-things-live.html">Locations and update flow</a>.</p>
 </div>
 
 
@@ -675,7 +675,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Methodological documentation · working plan</p>
+<p>Workflow documentation · draft assessment execution</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

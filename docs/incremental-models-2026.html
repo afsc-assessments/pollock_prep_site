@@ -162,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">2026 cumulative data-update models</h1>
-<p class="subtitle lead">Planned incremental comparisons from the baseline data through 2024</p>
+<p class="subtitle lead">Executed data introduction in the draft SAFE assessment</p>
 </div>
 
 
@@ -186,7 +186,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">October 18, 2026</p>
+      <p class="date-modified">October 25, 2026</p>
     </div>
   </div>
     
@@ -197,36 +197,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This sequence records Jim’s intended incremental data updates for the 2026 EBS pollock assessment. <strong>Every model inherits all changes from its predecessor.</strong> Model 0 is the baseline with data through 2024; model 0.9 is the end of the proposed updated-data sequence. The model endpoint becomes 2026 at model 0.1 and remains 2026 for all subsequent models. Observation years still differ among data streams.</p>
-<div class="callout callout-style-default callout-note callout-titled" title="Plan and comparison status">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Plan and comparison status
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>These are planned input changes and intended comparisons. No stock assessment fits were run for this wiki update, and no results or convergence checks for this sequence have been evaluated here. Jim expects little change from replacing fishery weight-at-age in model 0.3; that expectation is untested.</p>
-</div>
-</div>
-<div class="callout callout-style-default callout-important callout-titled" title="Provisional BTS split">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Important</span>Provisional BTS split
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Jim corrected himself during dictation around the BTS steps. The split between <strong>0.5 (BTS weight-at-age through 2026)</strong> and <strong>0.6 (BTS age compositions, biomass index, and covariance through 2026)</strong> remains provisional pending his confirmation. The table retains this proposed split. Jim subsequently specified <strong>0.8 for the AVO extension using fixed 2024 uncertainty calibration</strong> and <strong>0.9 for calibration across the full AVO period</strong>; those AVO labels and choices are now explicit. The earlier BTS split remains open.</p>
-</div>
-</div>
+<p>The 2026 draft SAFE follows the completed cumulative data updates below. Each stage inherits the preceding stage’s inputs. The accepted-model comparison uses Model 23.0 in ADMB; the subsequent Model 23.2 bridge and Model 26.0 Rceattle fit are structural/platform comparisons after the data updates. Numerical completion, selection of a working fit and scientific acceptance retain separate meanings.</p>
+<p>The original 0–0.9 plan was revised during implementation. The provisional BTS split and separate fixed-calibration AVO contrast were superseded by the executed sequence. This page records the current selected attempts, including later composition-weight refreshes, as reviewed on 25 October 2026.</p>
 <section id="cumulative-run-sequence" class="level2">
 <h2 class="anchored" data-anchor-id="cumulative-run-sequence">Cumulative run sequence</h2>
-<p>Each row describes only the new change relative to its predecessor. All other inputs and model settings carry forward unless an explicit change is recorded.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 25%">
@@ -236,90 +210,151 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th>Model</th>
-<th>New input change</th>
-<th>Data endpoint for this change</th>
-<th>Intended comparison</th>
+<th>Stage</th>
+<th>Recorded run label</th>
+<th>Change inherited by the next stage</th>
+<th>State</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>0</td>
-<td>Baseline assessment data.</td>
-<td>Through 2024.</td>
-<td>Reference for the cumulative updated-data comparisons.</td>
+<td>Baseline</td>
+<td><code>m0_baseline</code>, attempt 009</td>
+<td>Corrected Model 23.0 numerical baseline through 2024, including all four weight-likelihood terms. Its reconstruction qualifications remain recorded.</td>
+<td>Fitted numerical reference</td>
 </tr>
 <tr class="even">
-<td>0.1</td>
-<td>Update only the total catch biomass time series; extend the model endpoint to 2026.</td>
-<td>Total catch biomass through 2026.</td>
-<td>Compare with 0 to assess the catch update together with the extension of the model to 2026.</td>
+<td>Catch and endpoint</td>
+<td><code>m0.1_catch</code>, attempt 004</td>
+<td>Extend the model to 2026; add 2025 catch and the 2026 catch forecast. Initial future weights carry the 2024 rows.</td>
+<td>Fitted</td>
 </tr>
 <tr class="odd">
-<td>0.2</td>
-<td>Replace bottom trawl survey (BTS) weight-at-age.</td>
-<td>BTS weights through 2024.</td>
-<td>Compare with 0.1 to assess revised survey weights over the historical period.</td>
+<td>Weight alignment</td>
+<td><code>m0.1_waa_candidate</code>, attempt 007</td>
+<td>Update weight-model inputs and align fishery/BTS weights before adding fishery catch-at-age.</td>
+<td>Fitted</td>
 </tr>
 <tr class="even">
-<td>0.3</td>
-<td>Replace fishery weight-at-age.</td>
-<td>Fishery weights through 2024.</td>
-<td>Compare with 0.2 to assess revised fishery weights. Jim’s expectation of little change remains untested.</td>
+<td>Spawning-weight correction</td>
+<td><code>m0.1_waa_candidate</code>, attempt 009</td>
+<td>Apply the dedicated A-season spawning weights at ages 3–15+ in 2024–2026; retain ages 1–2. The 2026 schedule is projected.</td>
+<td>Fitted predecessor for age-data updates</td>
 </tr>
 <tr class="odd">
-<td>0.4</td>
-<td>Update fishery catch-at-age.</td>
-<td>Fishery age observations through 2025; no 2026 fishery age observations.</td>
-<td>Compare with 0.3 to assess the catch-at-age update while the model still ends in 2026.</td>
+<td>Fishery catch-at-age</td>
+<td><code>m0.1_caa</code>, attempt 004</td>
+<td>Add both 2024 and 2025 compositions. The selected refresh uses input effective sample sizes 443, 578 and 530 for 2023–2025.</td>
+<td>Fitted; selected cumulative stage</td>
 </tr>
 <tr class="even">
-<td>0.5 — provisional</td>
-<td>Extend BTS weight-at-age.</td>
-<td>BTS weights through 2026.</td>
-<td>Compare with 0.4 to assess the survey-weight extension, if this remains a separate step.</td>
+<td>Bottom-trawl survey (BTS)</td>
+<td><code>m0.2_bts</code>, attempt 006</td>
+<td>Update the historical release, index/full covariance, TMA-consistent age compositions and weights through 2026. Propagate the revised fishery sample sizes.</td>
+<td>Fitted; selected cumulative stage</td>
 </tr>
 <tr class="odd">
-<td>0.6 — provisional</td>
-<td>Jointly update BTS age compositions, biomass index, and covariance matrix.</td>
-<td>All three BTS components through 2026.</td>
-<td>Compare with 0.5 to assess the combined BTS observation update; this does not isolate the three components individually.</td>
+<td>Acoustic-trawl survey (ATS)</td>
+<td><code>m0.3_ats</code>, attempt 006</td>
+<td>Add the matched core-area index, provisional TMA-consistent age composition and biomass-derived weights for 2026. Use 2024 ATS weights in 2025, with no invented 2025 survey index/composition.</td>
+<td>Fitted; selected cumulative stage</td>
 </tr>
 <tr class="even">
-<td>0.7 — provisional number</td>
-<td>Add acoustic-trawl survey (ATS) data.</td>
-<td>ATS through 2026; previously the most recent data were from 2024.</td>
-<td>Compare with 0.6 to assess the ATS update after the preceding changes.</td>
-</tr>
-<tr class="odd">
-<td>0.8</td>
-<td>Add acoustic vessels of opportunity (AVO) observations for 2025 and preliminary 2026 using the fixed 2024 uncertainty calibration; retain all historical AVO indices and standard errors.</td>
-<td>AVO through 2026; 2020 remains absent.</td>
-<td>Compare with 0.7 to assess the AVO extension under the existing calibration.</td>
-</tr>
-<tr class="even">
-<td>0.9</td>
-<td>Recalibrate AVO uncertainty consistently over all observation years using the documented arithmetic mean CV of 25% rule and its legacy-year treatment. Preserve exactly the same observed indices, years and prediction weights as 0.8.</td>
-<td>All 20 AVO observations, 2006–2026 excluding 2020.</td>
-<td>Compare with 0.8 to isolate uncertainty calibration; this completes the proposed updated-data sequence.</td>
+<td>Acoustic vessels of opportunity (AVO)</td>
+<td><code>m0.4_avo</code>, attempt 004</td>
+<td>Add 2025/preliminary 2026 observations and recalibrate assessment CVs jointly over all 20 observation years to an arithmetic mean of 23%.</td>
+<td>Fitted; final Model 23.0 data stage</td>
 </tr>
 </tbody>
 </table>
+<p>The selected cumulative lineage after the spawning correction is fishery CAA → BTS → ATS → AVO. The first ATS/AVO fits preceded the final fishery sample-size revisions in calendar time; the later ATS/AVO refreshes inherit those revised upstream inputs. The attempt suffixes preserve this history rather than renumbering previous fitted runs.</p>
+<p>Applied conventions are explicit:</p>
+<ul>
+<li>The model endpoint is 2026; the 2026 catch input is a forecast of 1.270 million t. Fishery age observations end in 2025.</li>
+<li>Missing survey weights use finite positive temporal means within the same age, rather than means pooled across ages. BTS 2026 input effective N is 130.789474; ATS 2026 composition N is 94. These are likelihood weights, separate from raw fish counts.</li>
+<li>ATS biomass errors have arithmetic mean CV 20% over the 20 survey years 1994–2026, with the recorded 2000 exception of 45%. The age-1 index uses log-scale sigma 1. The 2020 USV biomass is an observation; its inherited age-1 substitute and lightly weighted composition retain their distinct qualification.</li>
+<li>AVO uses 20 observations in 2006–2026, excluding 2020. The 23% calibration preserves relative annual assessment-CV variation with a common scaling factor. Raw sampling errors retain their source meaning.</li>
+</ul>
 </section>
 <section id="keep-the-endpoints-distinct" class="level2">
 <h2 class="anchored" data-anchor-id="keep-the-endpoints-distinct">Keep the endpoints distinct</h2>
-<p>The 2026 model endpoint does not imply that every observation stream reaches 2026. In this sequence, fishery catch-at-age reaches 2025 and fishery weight-at-age is replaced through 2024. No 2026 fishery age observations are added at model 0.4 or in the downstream steps. BTS weights are first replaced through 2024 at 0.2, then provisionally extended through 2026 at 0.5. The BTS age compositions, index, and covariance are provisionally extended together at 0.6.</p>
+<p>Fishery catch-at-age ends in 2025; survey observations follow their actual sampling years. BTS and provisional ATS age products extend through 2026. The 2026 ATS conversion uses BTS FT-NIRS length/age information followed by the BTS paired conversion to traditional microscope-age consistency. Its provisional survey composition and weights are expected to be updated with survey age-composition data in 2027. The applied provisional fishery age basis, conversion limitations and uncertainty in supplied weight schedules remain scientific-review items.</p>
+<p>The subsequent Model 23.2 bridge uses the same final updated observations under its established structural alignment, including supplied weights. The selected Rceattle execution retains the established <strong>Model 26.0</strong> structure and updated observations. Saved run identifiers use <strong>26.2</strong>; the draft SAFE displays <strong>Model 26.0</strong>. Changing the display label created no additional fit. The older through-2024 Model 26.0 development fit remains a historical reference.</p>
 </section>
 <section id="compare-and-retain-the-evidence" class="level2">
 <h2 class="anchored" data-anchor-id="compare-and-retain-the-evidence">Compare and retain the evidence</h2>
-<p>Use adjacent-model comparisons to describe each new update conditional on the earlier changes. Compare each updated model with model 0 to describe the cumulative change. These differences depend on the update order; they do not establish an order-independent contribution for each data stream. Keep the 0.1 endpoint extension visible in comparisons with the baseline, and compare common historical years separately from the new terminal years.</p>
-<p>For each run, retain the input filenames and hashes, source delivery and coverage dates, model endpoint, inherited control settings, executable or code revision, and any preliminary-data qualifications. Once fits are available, record convergence diagnostics and compare spawning biomass, recruitment, fishing mortality, fit to observations, and any derived reference points or projections using matched definitions. Follow the <a href="./ebs-assessment-workflow.html#building-and-checking-the-assessment-model">annual model checks</a> and <a href="./ebs-assessment-workflow.html#reference-points-and-harvest-projections">projection handoff</a>. Results remain to be evaluated.</p>
+<p>The current selected runs give the following 2026 female spawning-biomass point estimates. These are working fitted results, in million tonnes, rather than final advice. The baseline through 2024 has no matching fitted 2026 point and is therefore excluded from this terminal-year comparison.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Completed stage</th>
+<th style="text-align: right;">2026 female SSB (million t)</th>
+<th>Contrast</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Catch and endpoint</td>
+<td style="text-align: right;">2.628</td>
+<td>Terminal endpoint established</td>
+</tr>
+<tr class="even">
+<td>Weight alignment</td>
+<td style="text-align: right;">2.547</td>
+<td>-3.09% from preceding row</td>
+</tr>
+<tr class="odd">
+<td>Corrected spawning weights</td>
+<td style="text-align: right;">2.538</td>
+<td>-0.34% from preceding row</td>
+</tr>
+<tr class="even">
+<td>Fishery CAA</td>
+<td style="text-align: right;">2.826</td>
+<td>+11.36% from preceding row</td>
+</tr>
+<tr class="odd">
+<td>BTS</td>
+<td style="text-align: right;">2.909</td>
+<td>+2.94% from preceding row</td>
+</tr>
+<tr class="even">
+<td>ATS</td>
+<td style="text-align: right;">2.802</td>
+<td>-3.71% from preceding row</td>
+</tr>
+<tr class="odd">
+<td>AVO: final Model 23.0</td>
+<td style="text-align: right;">2.838</td>
+<td>+1.31% from preceding row</td>
+</tr>
+<tr class="even">
+<td>Model 23.2 bridge</td>
+<td style="text-align: right;">3.087</td>
+<td>+8.75% from preceding row; structure comparison</td>
+</tr>
+<tr class="odd">
+<td>Model 26.0, updated-data Rceattle</td>
+<td style="text-align: right;">3.105</td>
+<td>+0.58% from Model 23.2; platform/configuration comparison</td>
+</tr>
+</tbody>
+</table>
+<p>All selected Model 23.0 stages pass their recorded gradient, positive-Hessian and finite-SE checks. The Model 23.2 bridge supports annual-trajectory comparison; classified zero-variance management reports are excluded from advice. The Rceattle working fit passes numerical and dispersed-start checks, with its recorded conditioning warnings and fixed-weight qualifications. Objective values across different likelihoods provide no direct model-ranking test.</p>
+<p>Adjacent changes depend on this cumulative order. The coupled BTS release and ATS/AVO observation/error updates leave individual component effects combined. The optional fishery-2024-only, BTS-2025-only and fixed-2024-calibration AVO contrasts remain unrun attribution proposals, rather than missing stages of the completed sequence.</p>
+<p>Matched retrospectives, observation-error self-tests and conditional posterior checks are separate evaluation work. The later proper-prior posterior sensitivity preserves the production incremental fits and does not replace the selected working assessment. Its posterior median is not the point estimate in the table above. Follow the <a href="./ebs-assessment-workflow.html#building-and-checking-the-assessment-model">annual model checks</a> and <a href="./ebs-assessment-workflow.html#reference-points-and-harvest-projections">projection handoff</a> for the corresponding workflow.</p>
 </section>
 <section id="source-and-open-decision" class="level2">
 <h2 class="anchored" data-anchor-id="source-and-open-decision">Source and open decision</h2>
-<p>This page records Jim’s cumulative model-update instructions supplied on 14 October 2026 and his AVO calibration increments approved on 18 October 2026. The sequence specifies intended comparisons; component preparation does not establish runnable cumulative inputs or completed fits. The 0.5/0.6 BTS split remains to be confirmed. Scientific inputs and run acceptance remain with the owning assessment project.</p>
+<p>This execution record reconciles the revised October sequence against the selected native reports and run records, with input/output identity and numerical checks verified on 25 October 2026. The original 0.5/0.6 BTS split, 0.8 fixed-calibration AVO step and 0.9 25%-CV contrast describe superseded plans; they are not the fitted final path. The applied AVO mean CV is 23%.</p>
+<p>Scientific review remains open for provisional age products and their conversion assumptions, inherited ATS age substitutes, composition weighting, fixed-weight uncertainty and remaining selectivity/data-influence tests. Francis weighting diagnostics have been calculated but are not applied. Projection selectivity alternatives remain under evaluation; final harvest advice and assessment adoption require their own review decisions. This page publishes the scoped workflow and aggregate execution account; the full draft SAFE, raw data, fitted objects and unrelated diagnostic details remain with the owning assessment workflow.</p>
 <div class="release-record">
-<p>Source commit: <code>b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964</code>. Built <strong>2026-10-18T21:13:34Z</strong> with Quarto 1.10.18. <a href="https://github.com/noaa-afsc/pollock_prep/tree/b10c2c21e9181b0df48c6c2dbbb8f20be1fe8964">Canonical source (restricted)</a> · <a href="./where-things-live.html">Locations and update flow</a>.</p>
+<p>Source commit: <code>fabdfd3b4a688be161ec413861140f2664fd0e94</code>. Built <strong>2026-10-25T23:07:06Z</strong> with Quarto 1.10.18. <a href="https://github.com/noaa-afsc/pollock_prep/tree/fabdfd3b4a688be161ec413861140f2664fd0e94">Canonical source (restricted)</a> · <a href="./where-things-live.html">Locations and update flow</a>.</p>
 </div>
 
 
@@ -747,7 +782,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Methodological documentation · working plan</p>
+<p>Workflow documentation · draft assessment execution</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
